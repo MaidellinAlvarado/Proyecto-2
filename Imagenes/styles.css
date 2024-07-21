@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('/Imagenes/fondo.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #daa1a1;
+    padding: 15px;
+    border-radius: 55px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(113, 106, 106, 0.622);
+    border: groove;
+    border-radius: 25px;
+    display: flex; /* Asegura que los elementos se alineen en una fila */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre elementos del menú */
+}
+
+nav ul li a {
+    color: #eee842;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(98, 184, 203, 0.153);
+}
+
+/* Media queries para dispositivos específicos */
+
+/* Tablet (768px) */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia a dirección de columna para apilar elementos */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    nav ul li {
+        display: block; /* Cambia a bloques para que cada elemento ocupe toda la anchura */
+        margin: 10px 0; /* Aumenta el espacio entre elementos */
+    }
+}
+
+/* Teléfono (hasta 480px) */
+@media screen and (max-width: 480px) {
+    nav ul li {
+        display: block; /* Asegura que cada elemento ocupe toda la anchura */
+        margin: 8px 0; /* Ajusta el espacio entre elementos */
+    }
+
+    nav ul li a {
+        padding: 8px 16px; /* Ajusta el padding para hacer más compacto en teléfonos */
+        font-size: 16px; /* Reduce el tamaño de la fuente para teléfonos */
+    }
+}
+
+/* Estilos adicionales para PCs */
+@media screen and (min-width: 1024px) {
+    nav ul {
+        max-width: 960px; /* Limita el ancho máximo del menú en PCs */
+        margin: 0 auto; /* Centra el menú en la pantalla */
+    }
+
+    nav ul li {
+        margin: 0 20px; /* Espacio entre elementos del menú en PCs */
+    }
+
+    nav ul li a {
+        font-size: 20px; /* Ajusta el tamaño de la fuente para PCs */
+    }
+}
+
+
+.imagenInicio img{
+    width: 800px;
+    height: 300px;
+    align-items: center;
+}
+
+
+/* Estilos para la sección de testimonios */
+.testimonios {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.testimonial img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}

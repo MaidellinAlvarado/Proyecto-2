@@ -1,0 +1,398 @@
+/* Estilos generales */
+body {
+    font-family:serif ;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('/Imagenes/fondo.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #daa1a1;
+    padding: 15px;
+    border-radius: 55px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(113, 106, 106, 0.622);
+    border: groove;
+    border-radius: 25px;
+    display: flex; 
+    justify-content: center; 
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #eee842;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(98, 184, 203, 0.153);
+}
+
+
+/* Tablet (768px) */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul li {
+        display: block; 
+        margin: 10px 0; 
+    }
+}
+
+
+
+
+.styled-button {
+   
+    background-color: #c0d2e9; 
+    color: rgb(22, 11, 66); 
+    border:medium;
+    padding: 15px 25px; 
+    text-align: center; 
+    text-decoration:initial; 
+    display: inline-block; 
+    font-size:10px; 
+    margin: 5px 10px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    transition: background-color 0.3s ease; 
+
+}
+
+.styled-button:hover {
+    background-color: #dfe493; 
+}
+
+.imagenInicio {
+    position: absolute;
+    top: -20px; 
+    left: 10px; 
+}
+.imagenInicio img {
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.buttons-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.servicio {
+    border: 1px solid #e7c3c3;
+    padding: 20px;
+    text-align: center;
+}
+
+.servicio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.servicio h3 {
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+
+.servicio p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Teléfono (hasta 480px) */
+@media screen and (max-width: 480px) {
+    nav ul li {
+        display: block; 
+        margin: 8px 0; 
+    }
+    nav ul li a {
+        padding: 8px 16px; 
+        font-size: 16px; 
+    }
+}
+
+
+.servicio img{
+    border-radius: 100%;
+}
+
+
+.containerMapa {
+    background-color: rgba(255, 255, 255, 0.847);
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto; 
+
+}
+
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 100px;
+
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.formulario {
+    flex: 1;
+    padding: 20px;
+    background-color: #fbe6e6; 
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(226, 226, 9, 0.1); 
+    max-width: 400px;
+    margin: 20px;
+}
+
+.formulario h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.formulario form {
+    display: grid;
+    gap: 15px;
+}
+
+.formulario form label {
+    font-weight: bold;
+}
+
+.formulario form input[type="text"],
+.formulario form input[type="tel"],
+.formulario form input[type="email"],
+.formulario form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #c8ee1e;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario form textarea {
+    height: 100px; 
+}
+
+.formulario form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff; 
+    border: solid rgb(204, 0, 255);
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario form input[type="submit"]:hover {
+    background-color: #77a7db; 
+}
+
+                
+
+.testimonios {
+    background-color: #ffeaf3;
+    padding: 50px 0;
+    text-align: center;
+    width: 1500;
+    height:500px;
+    border-style:outset;
+    border-radius: 50px;
+margin-left: 10px;
+
+}
+
+.testimonio-box {
+    display: inline-block;
+    width: 200px;
+    margin: 25px;
+ 
+    background-color: #f8f3e1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+    border-style: outset;
+    border-style: unset;
+}
+
+.testimonio-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    
+}
+
+.testimonio-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: #ebc7c7; 
+}
+
+
+.testimonio {
+    padding: 20px;
+}
+
+.testimonio img {
+    max-width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border-style: outset;
+}
+
+.testimonio p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4a0a0a;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.testimonio cite {
+    display: block;
+    font-style: italic;
+    color: #666;
+}
+
+.testimonio h1{
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #eec6c6;
+    padding: 20px 0;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #bb4343;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    nav ul {
+        max-width: 960px; 
+        margin: 0 auto; 
+    }
+
+    nav ul li {
+        margin: 0 20px; 
+    }
+
+    nav ul li a {
+        font-size: 20px; 
+    }
+}
+
